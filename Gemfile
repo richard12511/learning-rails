@@ -15,6 +15,10 @@ gem 'jquery-rails', '4.1.1'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
+group :production do
+  gem 'pg', '0.18.4'
+end
+
 group :development, :test do
   gem 'byebug', platform: :mri
   gem 'sqlite3', '1.3.12'
